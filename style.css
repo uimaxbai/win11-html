@@ -1,3 +1,13 @@
+/* Fonts */
+@font-face {
+    font-family: SegoeVariable;
+    src: url(SegoeVariable.woff);
+}
+@font-face {
+    font-family: SegoeUI;
+    src: url(SegoeUI.woff2);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +18,7 @@ html,body {
     margin: 0;
 }
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:SegoeVariable,'Segoe UI', SegoeUI,Tahoma, Geneva, Verdana, sans-serif;
     background: black;
 }
 
@@ -173,4 +183,10 @@ body {
     100% {
         opacity: 0;
     }
+}
+
+/* Login */
+.login {
+    opacity: 0;
+    background-image: url(img/login-wallpaper.avif);
 }
