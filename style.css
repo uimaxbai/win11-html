@@ -1,11 +1,17 @@
 /* Fonts */
 @font-face {
     font-family: SegoeVariable;
-    src: url(SegoeVariable.woff);
+    src: url(fonts/SegoeVariable.woff);
+    font-weight: normal;
+}
+@font-face {
+    font-family: SegotVariable;
+    src: url(fonts/SegoeVariable-Bold.woff);
+    font-weight: bold;
 }
 @font-face {
     font-family: SegoeUI;
-    src: url(SegoeUI.woff2);
+    src: url(fonts/SegoeUI.woff2);
 }
 
 * {
@@ -190,4 +196,10 @@ body {
 .login {
     z-index: 97;
     object-fit: cover;
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+.time {
+    text-align:center;
 }
