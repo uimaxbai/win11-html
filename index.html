@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Windows 11</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!-- Mobile support -->
+        <div class="cover mobile">
+            <div class="win11-logo" style="height: 100px;"></div>
+            <h1>Hey there!</h1>
+            <p>It seems as if you device is too small.</p>
+            <em>If you are using a tablet, try flipping it around!</em>
+            <p>Or try on a computer. That'll always work.</p>
+        </div>
+
+        <!-- Startup screen -->
+
+        <div class="startup-screen cover">
+            <div class="startup-screen-container">
+                <div class="win11-logo" style="height: 100px;"></div>
+                <div class="loader" style="vertical-align:middle;padding-top:2px;">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cover login">
+
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                setTimeout(() => {  $('.startup-screen').hide(); }, 1000);
+            });
+        </script>
+    </body>
+</html>
